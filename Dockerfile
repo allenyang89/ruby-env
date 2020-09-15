@@ -6,6 +6,7 @@ RUN apt-get update -qq\
         imagemagick \
         libpq-dev \
         default-libmysqlclient-dev \
+        git \
     && apt-get clean -y \
     && apt-get autoremove -y \
     && echo "gem: --no-document" >> /etc/gemrc \
